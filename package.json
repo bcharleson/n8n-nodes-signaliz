@@ -20,7 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/bcharleson/n8n-nodes-signaliz.git"
   },
-  "main": "dist/index.js",
   "scripts": {
     "build": "n8n-node build",
     "dev": "n8n-node dev",
