@@ -1,0 +1,31 @@
+Hey Josh! 👋
+
+Great news - the n8n integration is working perfectly for the synchronous Company Signal Enrichment endpoint! 🎉
+
+However, I've discovered a critical gap for the async operations (Deep Research, Agentic Research, and Multipass Research). Currently, there's no way to check task status or retrieve results without webhooks. This is a blocker for n8n users who need "wait for completion" patterns in their workflows.
+
+I put together a comprehensive implementation guide for 2 missing endpoints that would make the integration complete:
+
+1. GET /v1/tasks/{task_id}/status - Check if task is running/completed
+2. GET /v1/tasks/{task_id}/results - Retrieve completed results
+
+Since Signaliz is built on Manus, these should be straightforward to implement by proxying to the Manus API (GET https://api.manus.ai/v1/tasks/{task_id}).
+
+I've documented everything here:
+https://github.com/bcharleson/n8n-nodes-signaliz/blob/main/ASYNC_OPERATIONS_GUIDE.md
+
+This includes:
+✅ Exact endpoint specs with request/response examples (based on real API responses)
+✅ Complete implementation code (JavaScript) showing how to proxy to Manus
+✅ Field mapping between Manus and Signaliz formats
+✅ Error handling for all edge cases
+✅ Database caching strategy
+✅ Testing scenarios and checklist
+✅ n8n workflow patterns for polling
+
+Once these are live, I can add the Tasks resource to the n8n node (with Get Status and Get Results operations) and publish the complete integration.
+
+The integration is already functional for the synchronous Company Signal Enrichment endpoint, so users can start using that immediately. The async endpoints just need these additions to be fully usable in n8n.
+
+Let me know if you have any questions or want to discuss the implementation! Happy to help however I can. 🚀
+

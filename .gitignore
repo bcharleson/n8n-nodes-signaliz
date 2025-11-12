@@ -2,11 +2,16 @@
 dist/
 node_modules/
 
-# Documentation (except README.md, LICENSE.md, DEVELOPMENT.md)
+# Documentation (except essential docs)
 *.md
 !README.md
 !LICENSE.md
 !DEVELOPMENT.md
+!ASYNC_OPERATIONS_GUIDE.md
+!ASYNC_IMPLEMENTATION_SUMMARY.md
+!MESSAGE_FOR_JOSH.md
+!N8N_NEW_OPERATIONS.md
+!SIGNALIZ_API_SUGGESTIONS.md
 
 # Test files
 **/test/**
