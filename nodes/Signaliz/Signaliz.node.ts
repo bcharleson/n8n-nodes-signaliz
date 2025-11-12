@@ -14,7 +14,7 @@ export class Signaliz implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Signaliz',
 		name: 'signaliz',
-		icon: 'file:signaliz.svg',
+		icon: 'file:signaliz-icon.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
