@@ -12,8 +12,8 @@ export class SignalizApi implements ICredentialType {
 	documentationUrl = 'https://signaliz.com/dashboard/api-documentation';
 
 	icon: Icon = {
-		light: 'file:signaliz-icon.svg',
-		dark: 'file:signaliz-icon.svg',
+		light: 'file:signaliz.svg',
+		dark: 'file:signaliz.svg',
 	};
 
 	properties: INodeProperties[] = [

@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-signaliz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "n8n community node for Signaliz - AI-powered company research and signal detection",
   "keywords": [
     "n8n-community-node-package",
