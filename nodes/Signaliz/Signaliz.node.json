@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.signaliz",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://signaliz.com/dashboard/api-documentation"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://signaliz.com/dashboard/api-documentation"
+			}
+		]
+	}
+}
+

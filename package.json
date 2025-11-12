@@ -1,0 +1,59 @@
+{
+  "name": "n8n-nodes-signaliz",
+  "version": "1.0.0",
+  "description": "n8n community node for Signaliz - AI-powered company research and signal detection",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "signaliz",
+    "company research",
+    "signal detection",
+    "lead enrichment"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bcharleson/n8n-nodes-signaliz",
+  "author": {
+    "name": "Brandon Charleson",
+    "email": "b.charleson1@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcharleson/n8n-nodes-signaliz.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/SignalizApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Signaliz/Signaliz.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "^1.19.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {}
+}
+
