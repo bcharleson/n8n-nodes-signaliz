@@ -2,9 +2,11 @@
 dist/
 node_modules/
 
-# Documentation (except README.md)
+# Documentation (except README.md, LICENSE.md, DEVELOPMENT.md)
 *.md
 !README.md
+!LICENSE.md
+!DEVELOPMENT.md
 
 # Test files
 **/test/**
